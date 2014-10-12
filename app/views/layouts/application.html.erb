@@ -8,6 +8,12 @@
 </head>
 <body>
 
+  <ul>
+        <li><%= link_to "Home", todos_index_path %></li>
+        <li><%= link_to "Show", todos_show_path %></li>
+        <li><%= link_to "New", todos_new_path %></li>
+   </ul>
+
 <%= yield %>
 
 </body>
