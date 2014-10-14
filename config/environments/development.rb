@@ -27,7 +27,17 @@ Doit::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 
+   # Email
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
   config.action_mailer.default_url_options = { host: 'localhost:3000' }
-   config.action_mailer.delivery_method = :smtp
-   config.action_mailer.perform_deliveries = true
+  config.action_mailer.smtp_settings = {
+    address: 'jablanporras1@babson.edu', 
+    port: '587',
+    enable_starttls_auto: true,
+    user_name: 'someuser',
+    password: 'somepass',
+    authentication: :plain,
+    domain: 'localhost:3000'
+  }
 end

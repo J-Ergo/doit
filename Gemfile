@@ -66,6 +66,8 @@ gem 'omniauth'
 
 gem 'omniauth-facebook'
 
+gem 'omniauth-twitter'
+
 gem 'thin'
 
 gem 'wrap-bootstrap-rails'
